@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Trabalho JavaScript</title>
+    <link href="css/bootstrap-grid.css" rel="stylesheet">
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/bootstrap-grid.rtl.css" rel="stylesheet">
+    <link href="css/bootstrap-reboot.css" rel="stylesheet">
+    <link href="css/bootstrap-reboot.rtl.css" rel="stylesheet">
+    <link href="css/bootstrap-utilities.css" rel="stylesheet">
+    <link href="css/bootstrap-utilities.rtl.css" rel="stylesheet">
+    <script src="js/bootstrap.bundle.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/bootstrap.esm.js"></script>
+    <script src="js/script.js"></script>
+
+</head>
+
+<body>
+
+
+<div class="container-fluid">
+    <h1>Trabalho JavaScript: Fellipe Wyllyan Schenekemberg</h1>
+    <div class="row">
+
+        <div class="col">
+            <input class="numeros coluna1 linha1 diagonalPrincipal" type="number" value="1" readonly onchange="CalcularSomaCol1(); CalcularProdutoRow1(); CalcularSomaGeral(); CalcularProdutoDiagonalPrincipal()">
+        </div>
+        <div class="col">
+            <input class="numeros linha1" type="number" value="3" readonly onchange="CalcularProdutoRow1(); CalcularSomaGeral()">
+        </div>
+        <div class="col">
+            <input class="numeros linha1" type="number" value="3" readonly onchange="CalcularProdutoRow1(); CalcularSomaGeral()">
+        </div>
+        <div class="col">
+            <input class="numeros linha1" type="number" value="4" readonly onchange="CalcularProdutoRow1(); CalcularSomaGeral()">
+        </div>
+
+    </div>
+    <div class="row">
+
+        <div class="col">
+            <input class="numeros coluna1" type="number" value="5" readonly onchange="CalcularSomaCol1(); CalcularSomaGeral()">
+        </div>
+        <div class="col">
+            <input class="numeros diagonalPrincipal" type="number" value="6" readonly onchange="CalcularSomaGeral(); CalcularProdutoDiagonalPrincipal()">
+        </div>
+        <div class="col">
+            <input class="numeros" type="number" value="7" readonly onchange="CalcularSomaGeral()">
+        </div>
+        <div class="col">
+            <input class="numeros" type="number" value="8" readonly onchange="CalcularSomaGeral()">
+        </div>
+
+    </div>
+    <div class="row">
+
+        <div class="col">
+            <input class="numeros coluna1" type="number" value="9" readonly onchange="CalcularSomaCol1(); CalcularSomaGeral()">
+        </div>
+        <div class="col">
+            <input class="numeros" type="number" value="10" readonly onchange="CalcularSomaGeral()">
+        </div>
+        <div class="col">
+            <input class="numeros diagonalPrincipal" type="number" value="11" readonly onchange="CalcularSomaGeral(); CalcularProdutoDiagonalPrincipal()">
+        </div>
+        <div class="col">
+            <input class="numeros" type="number" value="12" readonly onchange="CalcularSomaGeral()">
+        </div>
+
+    </div>
+    <div class="row">
+
+        <div class="col">
+            <input class="numeros coluna1" type="number" value="13" readonly onchange="CalcularSomaCol1(); CalcularSomaGeral()">
+        </div>
+        <div class="col">
+            <input class="numeros" type="number" value="14" readonly onchange="CalcularSomaGeral()">
+        </div>
+        <div class="col">
+            <input class="numeros" type="number" value="15" readonly onchange="CalcularSomaGeral()">
+        </div>
+        <div class="col">
+            <input class="numeros diagonalPrincipal" type="number" value="16" readonly onchange="CalcularSomaGeral(); CalcularProdutoDiagonalPrincipal()">
+        </div>
+
+    </div>
+</div>
+
+<br>
+<br>
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col">Soma dos elementos da coluna 1</div>
+        <div class="col">Produto dos elementos da linha 1</div>
+        <div class="col">Soma de todos os elementos</div>
+        <div class="col">Produto da diagonal principal</div>
+    </div>
+
+    <div class="row">
+        <div class="col"><input type="text" readonly id="tarefa1"></div>
+        <div class="col"><input type="text" readonly id="tarefa2"></div>
+        <div class="col"><input type="text" readonly id="tarefa3"></div>
+        <div class="col"><input type="text" readonly id="tarefa4"></div>
+    </div>
+
+    <div class="row">
+
+        <div class="col-md-5">
+
+            <input type="checkbox" id="iAlterarNumeros" onchange="EditarNumeros()">
+            <label for="iAlterarNumeros">Editar números</label>
+
+        </div>
+
+    </div>
+
+    <script>
+        CalcularSomaCol1();
+        CalcularProdutoRow1();
+        CalcularSomaGeral()
+        CalcularProdutoDiagonalPrincipal()
+    </script>
+</div>
+</body>
+</html>
