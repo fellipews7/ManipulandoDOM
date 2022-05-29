@@ -8,6 +8,7 @@ A soma dos elementos de primeira coluna;
 O produto dos elementos da primeira linha;
 A soma de todos os elementos;
 O produto da diagonal principal.
+
 1	3	3	4
 
 5	6	7	8
