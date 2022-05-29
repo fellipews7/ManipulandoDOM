@@ -16,6 +16,5 @@ O produto da diagonal principal.
 9	10	11	12
 
 13	14	15	16
-Entrega
-Adicione o seu código em repositório no github e anexe na resposta o link de acesso.
+
 
